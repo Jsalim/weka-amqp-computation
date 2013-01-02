@@ -13,7 +13,7 @@ import pl.poznan.put.miabsr.weka.shared.RawInstance;
 import pl.poznan.put.miabsr.weka.shared.RawInstancePackage;
 
 @Component
-public class NodeTrainerImpl implements NodeTrainer {
+public class AmqpTrainDataSender implements TrainDataSender {
 
 	private static final int TRAIN_BATCH_SIZE = 100;
 

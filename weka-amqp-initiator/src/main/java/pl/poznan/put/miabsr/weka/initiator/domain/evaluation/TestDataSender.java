@@ -4,6 +4,6 @@ import java.util.List;
 
 import pl.poznan.put.miabsr.weka.shared.RawInstance;
 
-public interface EvaluationDistributer {
+public interface TestDataSender {
 	void distributeEvaluation(List<RawInstance> records);
 }

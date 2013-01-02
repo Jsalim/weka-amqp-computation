@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import pl.poznan.put.miabsr.weka.initiator.domain.FileDataLoader;
-import pl.poznan.put.miabsr.weka.initiator.domain.evaluation.EvaluationDistributer;
-import pl.poznan.put.miabsr.weka.initiator.domain.training.NodeTrainer;
+import pl.poznan.put.miabsr.weka.initiator.domain.evaluation.TestDataSender;
+import pl.poznan.put.miabsr.weka.initiator.domain.training.TrainDataSender;
 import pl.poznan.put.miabsr.weka.initiator.utils.Timer;
 import pl.poznan.put.miabsr.weka.shared.RawInstance;
 
@@ -27,13 +27,13 @@ public class InitiatorImpl implements Initiator {
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	private NodeTrainer nodeTrainer;
+	private TrainDataSender nodeTrainer;
 
 	@Autowired
 	private FileDataLoader fileDataLoader;
 
 	@Autowired
-	private EvaluationDistributer evaluationDistributer;
+	private TestDataSender evaluationDistributer;
 
 	@Autowired
 	private CachingConnectionFactory connectionFactory;

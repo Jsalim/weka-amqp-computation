@@ -4,6 +4,6 @@ import java.util.List;
 
 import pl.poznan.put.miabsr.weka.shared.RawInstance;
 
-public interface NodeTrainer {
+public interface TrainDataSender {
 	void trainNodes(List<RawInstance> records);
 }

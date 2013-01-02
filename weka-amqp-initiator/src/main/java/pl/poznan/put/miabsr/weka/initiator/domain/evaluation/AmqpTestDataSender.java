@@ -13,7 +13,7 @@ import pl.poznan.put.miabsr.weka.shared.RawInstance;
 import pl.poznan.put.miabsr.weka.shared.RawInstancePackage;
 
 @Component
-public class EvaluationDistributerImpl implements EvaluationDistributer {
+public class AmqpTestDataSender implements TestDataSender {
 
 	private static final int EVAL_BATCH_SIZE = 100;
 
