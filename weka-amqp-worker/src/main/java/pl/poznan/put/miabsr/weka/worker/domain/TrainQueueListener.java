@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.domain;
+package pl.poznan.put.miabsr.weka.worker.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import pl.poznan.put.miabsr.weka.node.config.LazyMessageListenerContainer;
 import pl.poznan.put.miabsr.weka.shared.RawInstancePackage;
+import pl.poznan.put.miabsr.weka.worker.config.LazyMessageListenerContainer;
 
 @Component
 public class TrainQueueListener {

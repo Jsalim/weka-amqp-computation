@@ -6,7 +6,7 @@ import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import pl.poznan.put.miabsr.weka.terminator.domain.ResultQueueListener;
+import pl.poznan.put.miabsr.weka.terminator.domain.FileResultSaver;
 
 /**
  * Implementation of {@link Terminator}
@@ -23,11 +23,11 @@ public class TerminatorImpl implements Terminator {
 	private CachingConnectionFactory connectionFactory;
 
 	@Autowired
-	private ResultQueueListener resultQueueListener;
+	private FileResultSaver fileResultSaver;
 
 	@Override
 	public void activate(String filePath) {
-		resultQueueListener.setResultfilename(filePath);
+		fileResultSaver.setResultfilename(filePath);
 	}
 
 	@Override

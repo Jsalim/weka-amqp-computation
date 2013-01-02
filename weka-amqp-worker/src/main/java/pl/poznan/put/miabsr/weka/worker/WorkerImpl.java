@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node;
+package pl.poznan.put.miabsr.weka.worker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,17 +7,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import pl.poznan.put.miabsr.weka.node.config.LazyMessageListenerContainer;
-import pl.poznan.put.miabsr.weka.node.domain.EvaluationService;
+import pl.poznan.put.miabsr.weka.worker.config.LazyMessageListenerContainer;
+import pl.poznan.put.miabsr.weka.worker.domain.EvaluationService;
 
 /**
- * Implementation of {@link Node}
+ * Implementation of {@link Worker}
  * 
  * @author pmendelski
  * 
  */
 @Component
-public class NodeImpl implements Node {
+public class WorkerImpl implements Worker {
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 

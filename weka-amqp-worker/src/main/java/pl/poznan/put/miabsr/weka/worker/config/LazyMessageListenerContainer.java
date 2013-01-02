@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.config;
+package pl.poznan.put.miabsr.weka.worker.config;
 
 import org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer;
 

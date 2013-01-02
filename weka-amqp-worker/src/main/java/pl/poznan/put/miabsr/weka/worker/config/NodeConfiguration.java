@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.config;
+package pl.poznan.put.miabsr.weka.worker.config;
 
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Import;
 import pl.poznan.put.miabsr.weka.shared.config.AmqpConfiguration;
 
 @Configuration
-@ComponentScan(basePackages = { "pl.poznan.put.miabsr.weka.node" })
+@ComponentScan(basePackages = { "pl.poznan.put.miabsr.weka.worker" })
 @Import({ TrainQueueConfiguration.class, TestQueueConfiguration.class })
 public class NodeConfiguration {
 	@Bean

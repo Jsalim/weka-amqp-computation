@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.config;
+package pl.poznan.put.miabsr.weka.worker.config;
 
 import org.springframework.amqp.core.AnonymousQueue;
 import org.springframework.amqp.core.Binding;
@@ -15,8 +15,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import pl.poznan.put.miabsr.weka.node.domain.TrainQueueListener;
 import pl.poznan.put.miabsr.weka.shared.config.AmqpConfiguration;
+import pl.poznan.put.miabsr.weka.worker.domain.TrainQueueListener;
 
 @Configuration
 public class TrainQueueConfiguration {

@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>weka-amqp-node</artifactId>
+	<artifactId>weka-amqp-worker</artifactId>
 	<packaging>jar</packaging>
 
 	<parent>
@@ -130,7 +130,7 @@
 						<manifest>
 							<classpathPrefix>lib/</classpathPrefix>
 							<addClasspath>true</addClasspath>
-							<mainClass>pl.poznan.put.miabsr.weka.node.NodeEntryPoint</mainClass>
+							<mainClass>pl.poznan.put.miabsr.weka.worker.WorkerEntryPoint</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -16,7 +16,7 @@
 	<modules>
 		<module>weka-amqp-shared</module>
 		<module>weka-amqp-initiator</module>
-		<module>weka-amqp-node</module>
+		<module>weka-amqp-worker</module>
 		<module>weka-amqp-terminator</module>
 	</modules>
 

@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node;
+package pl.poznan.put.miabsr.weka.worker;
 
 /**
  * Responsible for executing high level application tasks.
@@ -6,7 +6,7 @@ package pl.poznan.put.miabsr.weka.node;
  * @author pmendelski
  * 
  */
-public interface Node {
+public interface Worker {
 
 	void activate(String filteredClassValue);
 

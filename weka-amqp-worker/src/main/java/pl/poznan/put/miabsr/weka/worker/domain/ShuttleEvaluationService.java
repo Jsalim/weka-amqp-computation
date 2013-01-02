@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.domain;
+package pl.poznan.put.miabsr.weka.worker.domain;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

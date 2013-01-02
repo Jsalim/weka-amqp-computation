@@ -1,4 +1,4 @@
-package pl.poznan.put.miabsr.weka.node.config;
+package pl.poznan.put.miabsr.weka.worker.config;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import pl.poznan.put.miabsr.weka.node.domain.TestQueueListener;
 import pl.poznan.put.miabsr.weka.shared.config.AmqpConfiguration;
+import pl.poznan.put.miabsr.weka.worker.domain.TestQueueListener;
 
 @Configuration
 public class TestQueueConfiguration {

@@ -1,14 +1,14 @@
-package pl.poznan.put.miabsr.weka.node;
+package pl.poznan.put.miabsr.weka.worker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NodeShutdownHook extends Thread {
-	private final Node node;
+public class WorkerShutdownHook extends Thread {
+	private final Worker node;
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
-	public NodeShutdownHook(Node node) {
+	public WorkerShutdownHook(Worker node) {
 		this.node = node;
 	}
 
